@@ -10,12 +10,14 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0, 15px;
     background-color: #000000;
 }
 
 .logotipo {
     margin-left: 50px;
+    padding-left: 15px;
+    width: 160px;
+    height: 40px;
 }
 
 .menú {
@@ -23,16 +25,17 @@
     flex-direction: row;
     align-items: center;
     margin-right: 50px;
+    padding-right: 15px;
     color: #D9DADC;
 }
 
-.elemento {
-    margin-right: 20px;
-    font-size: 30px;
+.elemento, .separador {
+    font-size: 20px;
     margin-right: 50px;
+    padding: 28px 17px;
 }
 
-.logotipo {
-    width: 220px;
-    height: 60px;
+.elemento:hover {
+    color: #1ED760;
+    cursor: pointer;
 }
