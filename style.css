@@ -1,7 +1,7 @@
-.probar {
-    border: 2px solid black;
-    border-radius: 1rem;
-    padding: 5px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .banner {
@@ -11,31 +11,43 @@
     align-items: center;
     width: 100%;
     background-color: #000000;
+    font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
 }
 
 .logotipo {
-    margin-left: 50px;
+    margin-left: 300px;
     padding-left: 15px;
     width: 160px;
     height: 40px;
 }
 
-.menú {
+.navegación {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 50px;
-    padding-right: 15px;
+    margin-right: 300px;
+    height: 70px;
     color: #D9DADC;
+    list-style-type: none;
 }
 
 .elemento, .separador {
-    font-size: 20px;
-    margin-right: 50px;
+    font-size: 15px;
+    
     padding: 28px 17px;
+    background: none;
+    color: #D9DADC;
+    border: none;
+    text-decoration: none;
 }
 
 .elemento:hover {
     color: #1ED760;
     cursor: pointer;
+}
+
+.probar {
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 5px;
 }
