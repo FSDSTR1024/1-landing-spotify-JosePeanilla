@@ -66,7 +66,7 @@
 .title1 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     color: white;
     margin: 0px 350px;
@@ -78,11 +78,10 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 66px 50px;
-    width: 100%;
+    width: 600px;
 }
 
 .promoción1 {
-    
     font-size: 48px;
     font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
     font-weight: bold;
@@ -91,7 +90,7 @@
 .promoción2 {
     font-size: 16px;
     font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
-    padding-bottom: 20px;
+    margin: 15px 0px 13.2px 0px;
 }
 
 .botones {
@@ -100,8 +99,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    padding-bottom: 50px;
-    padding-top: 40px;
+    margin: 20px 0px 24px 0px;
 }
 
 .probar {
@@ -126,8 +124,9 @@
 
 .probar, .planes {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
+    font-weight: bold;
     padding-bottom: 15px;
     border-radius: 5rem;
     padding: 15px 30px;
@@ -148,8 +147,9 @@
 }
 
 .mascota {
-    width: 300px;
-    height: 180px;
+    width: 270px;
+    height: 170px;
+    margin-right: 250px;
 }
 
 .title2 {
@@ -168,4 +168,5 @@
 
 .promoción4 {
     font-size: 24px;
+    text-align: center;
 }
