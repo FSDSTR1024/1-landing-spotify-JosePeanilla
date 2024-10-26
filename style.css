@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
+.gradient {
     background: linear-gradient(to top, #121212, white) 
 }
     
@@ -15,31 +15,42 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 80px;
+    padding: 0px 15px;
     background-color: #000000;
     font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
 }
 
 .logotipo {
-    margin-left: 350px;
-    padding-left: 15px;
-    width: 180px;
-    height: 45px;
+    margin-left: 370px;
+    width: 132px;
+    height: 36px;
 }
 
 .navegación {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 350px;
     height: 70px;
+    margin-right: 360px;
     color: #D9DADC;
-    ;
     list-style-type: none;
 }
 
-.elemento, .separador {
-    font-size: 17px;
+.elemento {
+    font-size: 16px;
     padding: 28px 17px;
+    font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
+    background: none;
+    color: #D9DADC;
+    border: none;
+    text-decoration: none;
+    font-weight: bold
+}
+
+.separador{
+    font-size: 16px;
+    margin: 32px 17px;
     background: none;
     color: #D9DADC;
     border: none;
@@ -52,64 +63,84 @@ body {
     cursor: pointer;
 }
 
-.title {
+.title1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     color: white;
+    margin: 0px 350px;
+    padding-top: 30px;
 }
 
 .publicidad {
-    margin-right: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 66px 50px;
+    width: 100%;
 }
 
-.títuloprincipal {
-    margin-top: 100px;
-    font-size: 60px;
+.promoción1 {
+    
+    font-size: 48px;
+    font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
     font-weight: bold;
-    padding-bottom: 10px;
 }
 
-.títulosecundario {
-    font-size: 20px;
+.promoción2 {
+    font-size: 16px;
+    font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
     padding-bottom: 20px;
 }
 
 .botones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 50px;
     padding-top: 40px;
 }
 
 .probar {
-    font-size: 20px;
     font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
-    padding-bottom: 15px;
     background-color: #FFD2D7;
     color: #000000;
     border: 2px solid #FFD2D7;
-    border-radius: 5rem;
-    padding: 15px 30px;
+}
+
+.probar:hover {
+    background-color: white;
+    border: 2px solid white;
 }
 
 .planes {
-    font-size: 20px;
     font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
-    padding-bottom: 15px;
     background-color: #000000;
     color: white;
     border: 1px solid #FFD2D7;
-    border-radius: 5rem;
-    padding: 15px 30px;
     margin-left: 20px;
 }
 
 .probar, .planes {
     text-decoration: none;
+    font-size: 16px;
+    font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
+    padding-bottom: 15px;
+    border-radius: 5rem;
+    padding: 15px 30px;
+}
+
+.probar:hover,
+.planes:hover {
+    transform: scale(1.1);
 }
 
 .descripción {
-    font-size: 15px;
+    font-size: 12px;
+    font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
 }
 
 .condiciones {
@@ -117,9 +148,24 @@ body {
 }
 
 .mascota {
-    margin-top: 80px;
-    width: 350px;
-    height: 250px;
-    margin-right: 200px;
+    width: 300px;
+    height: 180px;
 }
 
+.title2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 75px;
+    color: white;
+}
+
+.promoción3 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.promoción4 {
+    font-size: 24px;
+}
