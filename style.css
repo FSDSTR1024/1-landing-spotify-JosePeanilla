@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #FFFFFF;
+    font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
 }
 
 .gradient {
-    background: linear-gradient(to top, #121212, white) 
+    background: linear-gradient(to top, #121212 73%, white);
 }
     
 
@@ -18,7 +20,6 @@
     height: 80px;
     padding: 0px 15px;
     background-color: #000000;
-    font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
 }
 
 .logotipo {
@@ -33,26 +34,23 @@
     align-items: center;
     height: 70px;
     margin-right: 360px;
-    color: #D9DADC;
     list-style-type: none;
 }
 
 .elemento {
     font-size: 16px;
     padding: 28px 17px;
-    font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
     background: none;
-    color: #D9DADC;
     border: none;
     text-decoration: none;
-    font-weight: bold
+    font-weight: bold;
+    color: #D9DADC;
 }
 
 .separador{
     font-size: 16px;
     margin: 32px 17px;
     background: none;
-    color: #D9DADC;
     border: none;
     text-decoration: none;
     font-weight: bold
@@ -68,7 +66,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    color: white;
     margin: 0px 350px;
     padding-top: 30px;
 }
@@ -83,13 +80,11 @@
 
 .promoción1 {
     font-size: 48px;
-    font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
     font-weight: bold;
 }
 
 .promoción2 {
     font-size: 16px;
-    font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
     margin: 15px 0px 13.2px 0px;
 }
 
@@ -103,33 +98,31 @@
 }
 
 .probar {
-    font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
     background-color: #FFD2D7;
     color: #000000;
     border: 2px solid #FFD2D7;
 }
 
 .probar:hover {
-    background-color: white;
-    border: 2px solid white;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
 }
 
 .planes {
-    font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
     background-color: #000000;
-    color: white;
     border: 1px solid #FFD2D7;
     margin-left: 20px;
 }
 
 .probar, .planes {
+    display: flex;
+    flex-wrap: nowrap;
     text-decoration: none;
-    font-size: 14px;
-    font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
+    font-size: 16px;
     font-weight: bold;
     padding-bottom: 15px;
     border-radius: 5rem;
-    padding: 15px 30px;
+    padding: 15px 15px;
 }
 
 .probar:hover,
@@ -138,12 +131,7 @@
 }
 
 .descripción {
-    font-size: 12px;
-    font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
-}
-
-.condiciones {
-    color: white;
+    font-size: 11px;
 }
 
 .mascota {
@@ -157,16 +145,362 @@
     flex-direction: column;
     align-items: center;
     padding-top: 75px;
-    color: white;
 }
 
 .promoción3 {
     font-size: 40px;
     font-weight: bold;
-    padding-bottom: 10px;
 }
 
 .promoción4 {
     font-size: 24px;
     text-align: center;
+    margin: 8px 0px 24px;
 }
+
+.ventajas {
+    margin: 0px 210px;
+    padding: 75px 0px;
+}
+
+.contenedor {
+    margin: 0px 242px;
+}
+
+.tabla {
+    display: grid;
+    grid-template-columns: 187px 129px 129px;
+}
+
+.column1{
+    grid-column-start: 1;
+    text-align: left;
+}
+
+.column2 {
+    grid-column-start: 2;
+}
+
+.column3 {
+    grid-column-start: 3;
+}
+
+.sp {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    width: 16px; 
+    height: 15px; 
+    vertical-align: middle; 
+    margin-right: 5px;
+}
+
+.linea {
+    width: 22px;
+    height: 3px;
+}
+
+.contenedor2 {
+    margin: 0px 55px;
+    padding: 35px 24px 0px; 
+}
+
+.title3{
+    font-size: 40px;
+    text-align: center;
+}
+
+.title4{
+    font-size: 16px;
+    text-align: center;
+    margin: 16px 225px 32px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.card {
+    margin: 0px 8px 0px 0px;
+}
+
+.paypal {
+    background-color: #ffffff;
+    border: 2px solid #D9DADC;
+    border-radius: 5px;
+}
+
+.card, .paypal {
+    width: 53px;
+    height: 38px;
+}
+
+.contenedor3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 48px 0px;
+    padding: 0px 32px;
+}
+
+.title5 {
+    font-size: 32px;
+    text-align: center;
+    width: 643px;
+    height: 88px;
+}
+
+.checklist {
+    justify-content: center;
+    margin: 16px 0px;
+    padding-left: 40px;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+}
+
+.check {
+    width: 11px;
+    height: 22px;
+}
+
+.checkdescription {
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.cajones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px 300px;
+    padding: 0px 24px;
+    gap: 30px;
+}
+
+/*cajón 1*/
+.cajón1, .cajón2, .cajón3, .cajón4 {
+    border: hidden;
+    border-radius: 10px;
+    background-color: #242424;
+    width: 352px;
+    height: 482px;
+}
+
+.interiorcajón {
+    padding: 0px 16px 0px 16px;
+}
+
+.promo1 {
+    border: hidden;
+    background-color: #FFD2D7;
+    color: black;
+    width: 202px;
+    height: 29px;
+    text-align: center;
+    padding: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px 0px 10px 0px;
+    margin-bottom: 30px;
+}
+
+.logopremium {
+    display: flex;
+}
+
+.logo2 {
+    width: 25px;
+    height: 22px;
+    margin-right: 4px;
+}
+
+.individual {
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFD2D7;
+    margin: 10px 0px 10px;
+}
+
+.p1 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.p2 {
+    font-size: 14px;
+    color: #A7A7A7;
+}
+
+hr {
+    height: 1px;
+    color: white;
+    margin-top: 16px;
+}
+
+.listacajón {
+    padding: 20px 16px;
+    height: 128px;
+    margin-bottom: 10px;
+}
+
+.boton1 {
+    background-color: #FFD2D7;
+    border-radius: 5rem;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border: hidden;
+    padding: 16px 34px;
+    margin: 20px 10px;
+}
+
+.p3 {
+    margin-top: 57px;
+    font-size: 12px;
+    color: #A7A7A7;
+    text-align: center;
+}
+
+span {
+    width: 65px;
+    height: 22px;
+    padding-top: 4px;
+}
+
+/*cajon2*/
+.promo2 {
+    border: hidden;
+    background-color: #C4B1D4;
+    color: black;
+    width: 182px;
+    height: 29px;
+    text-align: center;
+    padding: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px 0px 10px 0px;
+    margin-bottom: 30px;
+}
+
+.estudiantes {
+    font-size: 32px;
+    font-weight: bold;
+    color: #C4B1D4;
+    margin: 10px 0px 10px;
+}
+
+.boton2 {
+    background-color: #C4B1D4;
+    border-radius: 5rem;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border: hidden;
+    padding: 16px 43px;
+    margin: 20px 10px;
+}
+
+/*cajon3*/
+.interiorcajón3 {
+    padding: 17px 16px 0px 16px;
+}
+
+.duo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFC862;
+    margin: 10px 0px 10px;
+}
+
+.barra {
+    margin: 50px 0px 30px;
+}
+
+.boton3 {
+    background-color: #FFC862;
+    border-radius: 5rem;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border: hidden;
+    padding: 16px 67px;
+    margin: 20px 10px;
+}
+
+/*cajón4*/
+.familiar {
+    font-size: 32px;
+    font-weight: bold;
+    color: #A5BBD1;
+    margin: 10px 0px 10px;
+}
+
+.listacajón2 {
+    padding: 20px 16px;
+    height: 128px;
+    margin-bottom: 70px;
+}
+
+.boton4 {
+    background-color: #A5BBD1;
+    border-radius: 5rem;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border: hidden;
+    padding: 16px 52px;
+    margin: 60px 10px;
+}
+
+.boton1:hover,
+.boton2:hover,
+.boton3:hover,
+.boton4:hover {
+    transform: scale(1.1);
+}
+
+.cajonera {
+    margin-bottom: 70px;
+}
+
+.preguntas {
+    margin: 0px 55px;
+    padding: 75px 0px 64px;
+}
+
+.dudas {
+    text-align: center;
+}
+
+.title6 {
+    font-size: 32px;
+}
+
+.p4 {
+    margin: 16px 0px;
+}
+
+.p5 {
+    margin-bottom: 16px;
+}
+
+.desplegables {
+    margin: 0px 50px;
+}
+
+summary {
+    list-style: none;
+}
+
