@@ -63,7 +63,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 30px; 
-    margin: 0px 300px 0px 180px;
+    margin: 0px 180px 0px 180px;
 }
 
 .publicidad {
@@ -71,12 +71,13 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 56px 32px;
-    width: 300px;
+    margin-right: 30px;
 }
 
 .mascota {
-    width: 270px;
-    height: 170px;
+    width: 300px;
+    height: auto;
+    margin-right: 30px;
 }
 
 .promoción1 {
@@ -599,26 +600,57 @@ details[open] .flecha {
 }
 
 @media screen and (max-width:476px) {
+    .publicidad {
+        order: 2; /* Asegurarse de que la publicidad aparezca primero */
+        width: 300px;
+    }
+
+    .imagen {
+        order: 1; /* Asegurarse de que la imagen aparezca encima */
+        position: relative; /* Posicionar la imagen de manera relativa */
+        z-index: 1; /* Asegurarse de que la imagen esté por encima del texto */
+    }
+
+    .mascota {
+        width: 100px;
+        transition: width 0.3s ease;
+    }
+
     .title5 {
         margin-bottom: 150px;
-    }
-    .publicidad {
-        width: 300px;
     }
 }
    
         
 @media screen and (min-width:476px) {
-    .contenedor3 {
-        flex-direction: row;
+    .publicidad {
+        order: 2; /* Asegurarse de que la publicidad aparezca primero */
+        width: 300px;
     }
 
-    .publicidad {
-        width: 300px;
+    .imagen {
+        order: 1; /* Asegurarse de que la imagen aparezca encima */
+        position: relative; /* Posicionar la imagen de manera relativa */
+        z-index: 1; /* Asegurarse de que la imagen esté por encima del texto */
+    }
+
+    .mascota {
+        width: 200px;
+        transition: width 0.3s ease;
+    }
+
+    .contenedor3 {
+        flex-direction: row;
     }
 }
 
 @media screen and (min-width:768px) {
+    .mascota {
+        width: 700px;
+        margin-right: 30px;
+        transition: width 0.3s ease;
+    }
+
     .publicidad {
         width: 300px;
     }
@@ -634,6 +666,22 @@ details[open] .flecha {
 }
 
 @media screen and (min-width:1024px) {
+    .publicidad {
+        order: 1; /* Asegurarse de que la publicidad aparezca primero */
+        
+    }
+
+    .imagen {
+        order: 2; /* Asegurarse de que la imagen aparezca encima */
+        position: relative; /* Posicionar la imagen de manera relativa */
+        z-index: 2; /* Asegurarse de que la imagen esté por encima del texto */
+    }
+
+
+    .mascota {
+        width: 300px;
+    }
+
     .publicidad {
         width: 615px;
     }
@@ -653,13 +701,18 @@ details[open] .flecha {
         gap: 360px;
     }
 
+    .mascota {
+    width: 300px;
+    height: auto;
+    margin-right: 200px;
+    }
+
     .planes {
         margin-left: 15px;
     }
 
     .title1 {
         flex-direction: row;
-        gap: 130px;
     }
 
     .contenedor3 {
