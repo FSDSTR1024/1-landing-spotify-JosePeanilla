@@ -121,8 +121,6 @@
 }
 
 .probar, .planes {
-    display: flex;
-    flex-wrap: nowrap;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
@@ -177,6 +175,10 @@
 
 tr {
     border-bottom: 1px solid #ffffff;
+}
+
+.fila1 {
+    text-align: left;
 }
 
 .celda {
@@ -253,11 +255,11 @@ tr {
 
 .fila:hover th:nth-child(1),
 .fila:hover td:nth-child(2) {
-    background-color: #1F1F1F; /* Color para las dos primeras celdas */
+    background-color: #1F1F1F; 
 }
 
 .fila:hover td:nth-child(3) {
-    background-color: #FFFFFF24; /* Color para la tercera celda */
+    background-color: #FFFFFF24; 
 }
 
 .contenedor2 {
@@ -608,7 +610,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 355px;
+    height: 300px;
     margin: 0px 241px;
 }
 
@@ -654,7 +656,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: flex-end;
     list-style: none;
     padding-top: 20px;
     gap: 15px;
@@ -676,6 +677,41 @@ footer {
     color: #919496;
     text-decoration: none;
     gap: 8px;
+    padding: 0px 12px;
+}
+
+.lenguaje:hover {
+    color: #1ED760;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 241px;
+    font-size: 12px;
+    height: 41px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-around;
+    width: 850px;
+}
+
+.footer-enlaces {
+    color: #919496;
+    text-decoration: none;
+}
+
+.footer-enlaces:hover {
+    color: #1ED760;
+    cursor: pointer;
+}
+
+.derechos {
+    color: #919496;
 }
 
 @media screen and (max-width:476px) {
