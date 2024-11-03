@@ -604,6 +604,8 @@ details[open] .flecha {
 footer {
     background-color: black;
     padding: 80px 0px 50px;
+    height: auto;
+    overflow-x: hidden;
 }
 
 .footer-content {
@@ -828,9 +830,9 @@ footer {
     }
 
     .mascota {
-    width: 300px;
-    height: auto;
-    margin-right: 200px;
+        width: 300px;
+        height: auto;
+        margin-right: 200px;
     }
 
     .planes {
