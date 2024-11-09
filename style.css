@@ -342,7 +342,7 @@ tr {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0px 179px;
+    margin: 0px 159px;
     padding: 0px 24px;
     gap: 30px;
 }
@@ -851,7 +851,7 @@ footer {
         flex-direction: row;
     }
 
-    .botones {
+     .botones {
         flex-direction: row;
     }
 
@@ -861,5 +861,12 @@ footer {
 
     .footer-content {
         flex-direction: row;
+    }
+}
+
+@media screen and (min-width:1560px) {
+
+    .cajones {
+        margin: 0px 179px;
     }
 }
